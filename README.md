@@ -90,6 +90,10 @@ Please follow the step mentioned in the Google reference doc [here](https://supp
 * **Installing SSL certificate:**
 It has two steps, first is to get a certificate [instructions mentioned in previous section]. This certificate then needs to be registered on your AWS account. Please follow the instruction in the [link](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-api-cli.html#import-certificate-api) to import the certificate. Next use this configured certificate in your elasticbeanstalk application. The instructions are mentioned in this [link](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https-elb.html)
 
+## Developer tools
+* **Setting up mongo DB on server**: If you wanted to set up mongo db on a server and use the machine as the db server, you can simply execute the script on the server. Script can be found in scripts folder.
+
+
 ## Authors
 
 * **Chirag Jain** - *er.chiragjain92@gmail.com* - [github](http://github.com/CJ8664)
