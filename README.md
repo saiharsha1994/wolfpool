@@ -98,7 +98,7 @@ https://github.com/CJ8664/wolfpool -> https://wpool-dev.us-east-1.elasticbeansta
 
 ## Authors
 
-* **Shyam Katta** - *shyamkatta27@gmail.com* - [github](http://github.com/shyamkatta)
+* **Shyam Katta** - *kattashyam27@gmail.com* - [github](http://github.com/shyamkatta)
 * **Sai Harsha Suryadevara** - *s.saiharsha.1993@gmail.com* - [github](http://github.com/saiharsha1994)
 * **Sai Harsha Kanmanapalli** - *harshakanamanapalli@gmail.com* - [github](http://github.com/harshakanamanapalli)
 * **SantHosh Dharmagadi** - *sdharma@ncsu.edu* - [github](https://github.com/santhoshdharmagadi)
