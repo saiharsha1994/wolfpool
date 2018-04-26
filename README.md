@@ -74,6 +74,12 @@ Now you can register as a new user and start using the web application. Once you
 ## HTTPS Certificate installation [Free][Not Needed for Localhost]
 
 You can get an SSL Certificate for your web application from [https://www.sslforfree.com/](https://www.sslforfree.com/). This will enable make all the data transfer on your website secure. More importantly the web application uses native HTML5 geolocation API, which works fine on localhost but fails to work once hosted on AWS or other hosting. The part to install this certificate on AWS will be covered in upcoming sections.
+In manual verification, your website should be able to handle the get request "yourdomain/.well-known/acme-challenge/.
+following code can be added to app.js -
+1. var serveIndex = require('serve-index');
+2. app.use('/.well-known', express.static('.well-known'), serveIndex('.well-known'));
+
+related dependencies can be added in package.json if not present.
 
 NOTE: This step is one of the step in AWS deployment but mentioned as separate step so that can be used in any other project.
 
