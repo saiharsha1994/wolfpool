@@ -1,5 +1,8 @@
 # WolfPool
 
+
+Live version - **https://wolfpool.us-east-2.elasticbeanstalk.com** . Sample username - sdharma@ncsu.edu, password - Santhosh@123
+
 UberPOOL and LyftLine are very efficient and affordable for travelling short distances. However, for suburban areas and a majority of metropolitan cities this option is not available. This is mainly due to low number of people travelling on the same route. The connectivity and frequency of public transportation is limited in these areas. In addition to these issues, there are a lot of difficulties to communicate and plan the rides using social media platforms such as Facebook and Whatsapp. To tackle the problems mentioned above, we have devised WolfPool as a service that specifically targets to enhance communication and convenience in planning of rides.
 
 ## Getting Started
@@ -74,6 +77,12 @@ Now you can register as a new user and start using the web application. Once you
 ## HTTPS Certificate installation [Free][Not Needed for Localhost]
 
 You can get an SSL Certificate for your web application from [https://www.sslforfree.com/](https://www.sslforfree.com/). This will enable make all the data transfer on your website secure. More importantly the web application uses native HTML5 geolocation API, which works fine on localhost but fails to work once hosted on AWS or other hosting. The part to install this certificate on AWS will be covered in upcoming sections.
+In manual verification, your website should be able to handle the get request "yourdomain/.well-known/acme-challenge/.
+following code can be added to app.js -
+1. var serveIndex = require('serve-index');
+2. app.use('/.well-known', express.static('.well-known'), serveIndex('.well-known'));
+
+related dependencies can be added in package.json if not present.
 
 NOTE: This step is one of the step in AWS deployment but mentioned as separate step so that can be used in any other project.
 
@@ -90,13 +99,18 @@ Please follow the step mentioned in the Google reference doc [here](https://supp
 * **Installing SSL certificate:**
 It has two steps, first is to get a certificate [instructions mentioned in previous section]. This certificate then needs to be registered on your AWS account. Please follow the instruction in the [link](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-api-cli.html#import-certificate-api) to import the certificate. Next use this configured certificate in your elasticbeanstalk application. The instructions are mentioned in this [link](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https-elb.html)
 
+## Developer tools
+* **Setting up mongo DB on server**: If you wanted to set up mongo db on a server and use the machine as the db server, you can simply execute the script on the server. Script can be found in scripts folder.
+
+## Extended from WolfPool
+https://github.com/CJ8664/wolfpool -> https://wpool-dev.us-east-1.elasticbeanstalk.com/
+
 ## Authors
 
-* **Chirag Jain** - *er.chiragjain92@gmail.com* - [github](http://github.com/CJ8664)
-* **Ankit Jain** - *ankit13jain@gmail.com* - [github](http://github.com/ankit13jain)
-* **Nirav Jain** - *niravr7@gmail.com* - [github](http://github.com/niravjain)
-* **Rishabh Jain** - *rishabh05apr@gmail.com* - [github](https://github.com/Rishabh05apr)
-* **Pratik Kumar Jain** - *kumathpratik@gmail.com* - [github](https://github.com/pratikkumar-jain)
+* **Shyam Katta** - *kattashyam27@gmail.com* - [github](http://github.com/shyamkatta)
+* **Sai Harsha Suryadevara** - *s.saiharsha.1993@gmail.com* - [github](http://github.com/saiharsha1994)
+* **Sai Harsha Kanmanapalli** - *harshakanamanapalli@gmail.com* - [github](http://github.com/harshakanamanapalli)
+* **SantHosh Dharmagadi** - *sdharma@ncsu.edu* - [github](https://github.com/santhoshdharmagadi)
 
 ## License
 
