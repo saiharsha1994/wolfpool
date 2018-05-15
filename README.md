@@ -95,6 +95,7 @@ Please follow the step mentioned in the Google reference doc [here](https://supp
 * **Installing Node.js on Elasticbeanstalk**: If you dont know what Elasticbeanstalk is please watch [this short video](https://youtu.be/SrwxAScdyT0) (recommended) before you start. The instructions are explained clearly and exhaustively in this [link](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html)
 
 * **Installing MongoDB in the EC2 instance of the Elasticbeanstalk application**: Once you have SSH access to the EC2 instance that is being used for your application, please use Putty or Terminal to remotely login into the server. Once you are looged in follow the steps mentioned in the [link](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon/) to install MongoDB service which can be connected locally by the Node.js service.
+**Reference** - https://www.journaldev.com/3849/install-mongodb-linux 
 
 * **Installing SSL certificate:**
 It has two steps, first is to get a certificate [instructions mentioned in previous section]. This certificate then needs to be registered on your AWS account. Please follow the instruction in the [link](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-api-cli.html#import-certificate-api) to import the certificate. Next use this configured certificate in your elasticbeanstalk application. The instructions are mentioned in this [link](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https-elb.html)
